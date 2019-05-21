@@ -11,10 +11,10 @@ public class StepTracker {
 
     public void addDailySteps(int steps) {
         totalSteps += steps;
+        numDays++;
         if (steps >= activeMin) {
             activeDays++;
         }
-        numDays++;
     }
 
     public int activeDays() {
